@@ -13,7 +13,7 @@ protobuf  3.19.1
 # Bioinformatics tools and database   
 To run the SOFB, you need to install the bioinformatics tools and download the corresponding databases:  
 (1) Install blast+ for extracting PSSM(position-specific scoring matrix) profiles  
-To install ncbi-blast-2.8.1+ and download NR database (ftp://ftp.ncbi.nlm.nih.gov/blast/db/) for psiblast, please refer to BLAST® Help (https://www.ncbi.nlm.nih.gov/books/NBK52640/).  
+To install ncbi-blast-2.8.1+ and download NR database (ftp://ftp.ncbi.nlm.nih.gov/blast/db/) for psiblast, please refer to BLAST(https://www.ncbi.nlm.nih.gov/books/NBK52640/).  
 (2) Install HHblits for extracting HMM profiles
 To install HHblits and download uniclust30_2018_08 (http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz) for HHblits, please refer to https://github.com/soedinglab/hh-suite.
 
@@ -39,9 +39,9 @@ python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 The interpretability analysis of our model refers to the shap(https://github.com/slundberg/shap) and the Visualization refers t othe Prottrans(https://github.com/agemagician/ProtTrans).
 <p align="center">
   <img src="intepretability.png">
-  <b>intepretability of the SOFB)</b><br><br>
+  <b>intepretability of the SOFB</b><br><br>
 </p>
 <p align="center">
   <img src="visualization.png">
-  <b>visualization of the bio-language learning model)</b><br><br>
+  <b>visualization of the bio-language learning model</b><br><br>
 </p>
