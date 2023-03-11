@@ -25,7 +25,7 @@ python Pks.py
 python RAA.py 
 python pychar.py 
 ```
-For the other features, you can get them by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare, you need download it and set the path in the program :  
+For the other features, you can get them by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare(https://figshare.com/articles/dataset/SOFB/22256359), you need download it and set the path in the program :  
 ```
 python generate_multi_feature.py --nucleic_acid RNA(or DNA)
 ```
