@@ -38,10 +38,10 @@ python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 # Interpretability  and Visization
 The interpretability analysis of our model refers to the shap(https://github.com/slundberg/shap) and the Visualization refers t othe Prottrans(https://github.com/agemagician/ProtTrans).
 <p align="center">
-  <img src="intepretability.png">
+  <img width="150" height=200 src="intepretability.png">
   <b>intepretability of the SOFB</b><br><br>
 </p>
 <p align="center">
-  <img src="visualization.png">
+  <img width="150" height=200 src="visualization.png">
   <b>visualization of the bio-language learning model</b><br><br>
 </p>
