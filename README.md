@@ -41,7 +41,7 @@ python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 ```
 
 # Interpretability  and Visization
-The interpretability analysis of our model refers to the shap(https://github.com/slundberg/shap) and the Visualization refers t othe Prottrans(https://github.com/agemagician/ProtTrans).
+The interpretability analysis of our model refers to the SHAP(https://github.com/slundberg/shap) and the Visualization refers t othe ProtTrans(https://github.com/agemagician/ProtTrans).
 
 <p align="center">
   <img width="600" height=800 src="intepretability.png">
