@@ -40,7 +40,7 @@ After getting the all data_vec(train_gen, train_bio_vec, train_dyna; test_gen, t
 python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 ```
 
-# Interpretability  and Visization
+# Interpretability  and Visualization
 The interpretability analysis of our model refers to the SHAP(https://github.com/slundberg/shap) and the Visualization refers t othe ProtTrans(https://github.com/agemagician/ProtTrans).
 
 <p align="center">
