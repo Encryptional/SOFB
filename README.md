@@ -19,9 +19,7 @@ To install HHblits and download uniclust30_2018_08 (http://wwwuser.gwdg.de/~comp
 
 
 # Extract multi-features using various method  
-For the PKs, Physicochemical characteristics and RAA in DNA and RNA, you can generate different results by changing the datasets path and the save file name in the file :  
-(raa_train; pychar_train1; pychar_train2; pychar_train3; pkx_train; train_one_hot; train_bio_PSSM; train_bio__HMM) and
- (raa_test; pychar_test1; pychar_test2; pychar_test3 pkx_test; test_one_hot; test_bio_PSSM; test_bio__HMM)
+For the PKs, Physicochemical characteristics and RAA in DNA and RNA, you can generate different results by changing the datasets path and the save file name in the file (raa_train; pychar_train1; pychar_train2; pychar_train3; pkx_train) and (raa_test; pychar_test1; pychar_test2; pychar_test3; pkx_test):  
 ```
 python Pks.py 
 python RAA.py 
@@ -42,10 +40,12 @@ The interpretability analysis of our model refers to the shap(https://github.com
 
 <p align="center">
   <img width="600" height=800 src="intepretability.png">
-  <b>intepretability of the SOFB</b><br><br>
+
+  <p align="center">intepretability of the SOFB</p><br><br>
 </p>
   
 <p align="center">
-  <img width="600" height=800 src="visualization.png">
-  <b>visualization of the bio-language learning model</b><br><br>
+  <img width="700" height=800 src="visualization.png">
+
+  <p align="center">visualization of the bio-language learning model</p><br><br>
 </p>
