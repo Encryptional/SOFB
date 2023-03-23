@@ -19,18 +19,23 @@ To install HHblits and download uniclust30_2018_08 (http://wwwuser.gwdg.de/~comp
 
 
 # Extract multi-features using various method  
-For the PKs, Physicochemical characteristics and RAA in DNA and RNA, you can generate different results by changing the datasets path and the save file name in the file (raa_train; pychar_train1; pychar_train2; pychar_train3; pkx_train) and (raa_test; pychar_test1; pychar_test2; pychar_test3; pkx_test):  
+For the PKs, Physicochemical characteristics and RAA in DNA and RNA, you can generate different results by changing the datasets path and the save file name in the file:  
 ```
 python Pks.py 
 python RAA.py 
 python pychar.py 
 ```
-For the other features, you can get them by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare(https://figshare.com/articles/dataset/SOFB/22256359), you need download it and set the path in the program :  
+In this way, you can get (raa_train; pychar_train1; pychar_train2; pychar_train3; pkx_train) and (raa_test; pychar_test1; pychar_test2; pychar_test3; pkx_test).  
+
+After that, you can get other features by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare(https://figshare.com/articles/dataset/SOFB/22256359), you need download it and set the path in the program :  
 ```
 python generate_multi_feature.py --nucleic_acid RNA(or DNA)
 ```
+Then, you can get other bio-features (train_one_hot; train_bio_PSSM; train_bio__HMM; test_one_hot; test_bio_PSSM; test_bio_HMM) and dynamic language embeddings(dyna_train; dyna_test; gene_train; gene_test).  
+
+Particularly, all the bio-features will concatenate as(train_bio_vec; test_bio_vec).
 # Prediction and test 
-After getting the all data_vec(train_gen, train_bio_vec, train_dyna), you can train a new model or make the test by the command:  
+After getting the all data_vec(train_gen, train_bio_vec, train_dyna; test_gen, test_bio_vec, test_dyna), you can train a new model (or make the test) by the train (test) function in  'predict.py' file by the command:  
 ```
 python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 ```
@@ -40,12 +45,10 @@ The interpretability analysis of our model refers to the shap(https://github.com
 
 <p align="center">
   <img width="600" height=800 src="intepretability.png">
-
   <p align="center">intepretability of the SOFB</p><br><br>
 </p>
   
 <p align="center">
   <img width="700" height=800 src="visualization.png">
-
   <p align="center">visualization of the bio-language learning model</p><br><br>
 </p>
