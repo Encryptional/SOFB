@@ -1,4 +1,4 @@
-# Characterization and interpretation for nucleic-acid-binding residues from sequence information using SOFB  
+# SOFB: A Comprehensive Ensemble Deep Learning for Elucidating and Characterizing Protein-Nucleic-Acid-Binding Residues  
 This repository is developed for nucleic acid binding residues identification using SOFB, which implemented an ensemble deep learning model-based sequence network.  
 
 # Requirement  
