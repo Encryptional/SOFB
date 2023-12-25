@@ -31,11 +31,11 @@ After that, you can get other features by run the command, particularly, the mod
 ```
 python generate_multi_feature.py --nucleic_acid RNA(or DNA)
 ```
-Then, you can get other bio-features (train_one_hot; train_bio_PSSM; train_bio__HMM; test_one_hot; test_bio_PSSM; test_bio_HMM) and dynamic language embeddings(dyna_train; dyna_test; gene_train; gene_test).  
+Then, you can get other bio-features (train_one_hot; train_bio_PSSM; train_bio__HMM; test_one_hot; test_bio_PSSM; test_bio_HMM) and dynamic language embeddings(NABert_train; NABert_test; ProtT5_train; ProtT5_test).  
 
 Particularly, all the bio-features will concatenate as(train_bio_vec; test_bio_vec).
 # Prediction and test 
-After getting the all data_vec(train_gen, train_bio_vec, train_dyna; test_gen, test_bio_vec, test_dyna), you can train a new model (or make the test) by the train (test) function in  'predict.py' file by the command:  
+After getting the all data_vec(train_T5, train_bio_vec, train_NABert; test_T5, test_bio_vec, test_NABert), you can train a new model (or make the test) by the train (test) function in  'predict.py' file by the command:  
 ```
 python predict.py --nucleic_acid RNA --epochs 30 --batchsize 1024 --ensemble 4
 ```
