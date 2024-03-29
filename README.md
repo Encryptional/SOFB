@@ -27,7 +27,7 @@ python pychar.py
 ```
 In this way, you can get (raa_train; pychar_train1; pychar_train2; pychar_train3; pkx_train) and (raa_test; pychar_test1; pychar_test2; pychar_test3; pkx_test).  
 
-After that, you can get other features by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare(https://figshare.com/articles/dataset/SOFB/22256359), you need download it and set the path in the program :  
+After that, you can get other features by run the command, particularly, the model used for generating dynamic embedding is provided in fighsare(https://figshare.com/articles/online_resource/SOFB_figshare_rar/25499452), you need download it and set the path in the program :  
 ```
 python generate_multi_feature.py --nucleic_acid RNA(or DNA)
 ```
